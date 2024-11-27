@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page">
+    <ActionBar title="Meu Perfil" class="action-bar">
+        <NavigationButton visibility="visible" />
+        <ActionItem ios.position="right" android.position="actionBar" tap="{{ onLogout }}">
+            <Label text="Sair" class="action-item" />
+        </ActionItem>
+    </ActionBar>
+
+    <ScrollView>
+        <StackLayout class="p-4">
+            <!-- Profile Image -->
+            <Image src="{{ profileImage }}" 
+                   class="profile-image" 
+                   width="100" 
+                   height="100" 
+                   stretch="aspectFill" />
+
+            <!-- Basic Info -->
+            <Label text="Informações Básicas" class="h2 m-b-5" />
+            
+            <GridLayout rows="auto, auto" columns="*, *" class="form">
+                <StackLayout row="0" col="0" class="input-field">
+                    <Label text="Nome" class="label" />
+                    <TextField text="{{ name }}" 
+                             hint="Seu nome completo"
+                             class="input" />
+                </StackLayout>
+                
+                <StackLayout row="0" col="1" class="input-field">
+                    <Label text="Idade" class="label" />
+                    <TextField text="{{ age }}" 
+                             hint="Sua idade"
+                             keyboardType="number"
+                             class="input" />
+                </StackLayout>
+            </GridLayout>
+
+            <StackLayout class="input-field">
+                <Label text="Localização" class="label" />
+                <TextField text="{{ location }}" 
+                          hint="Cidade, País"
+                          class="input" />
+            </StackLayout>
+
+            <StackLayout class="input-field">
+                <Label text="LinkedIn" class="label" />
+                <TextField text="{{ linkedinUrl }}" 
+                          hint="URL do seu perfil LinkedIn"
+                          class="input" />
+            </StackLayout>
+
+            <StackLayout class="input-field">
+                <Label text="Sobre Mim" class="label" />
+                <TextView text="{{ bio }}" 
+                         hint="Conte um pouco sobre você..."
+                         class="input input-border" />
+            </StackLayout>
+
+            <!-- Interests -->
+            <Label text="Interesses" class="h2 m-t-10 m-b-5" />
+            <WrapLayout>
+                <Repeater items="{{ interests }}">
+                    <Repeater.itemTemplate>
+                        <Label text="{{ $value }}" 
+                               class="chip" 
+                               tap="{{ $parents['Repeater'].onInterestTap }}" />
+                    </Repeater.itemTemplate>
+                </Repeater>
+            </WrapLayout>
+
+            <!-- Save Button -->
+            <Button text="{{ isSaving ? 'Salvando...' : 'Salvar Alterações' }}" 
+                    tap="{{ onSave }}" 
+                    isEnabled="{{ !isSaving }}"
+                    class="btn btn-primary m-t-20" />
+        </StackLayout>
+    </ScrollView>
+</Page>

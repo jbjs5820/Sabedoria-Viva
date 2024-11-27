@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page">
+    <ActionBar title="Sabedoria Viva" class="action-bar" />
+    
+    <ScrollView>
+        <StackLayout class="p-4">
+            <Label text="Bem-vindo!" class="text-3xl font-bold text-center mb-4" />
+            <Label text="Entre para conectar-se" class="text-lg text-gray-600 text-center mb-8" textWrap="true" />
+            
+            <TextField hint="Email" 
+                      text="{{ email }}" 
+                      keyboardType="email" 
+                      class="input" 
+                      autocorrect="false" 
+                      autocapitalizationType="none" />
+            
+            <TextField hint="Senha" 
+                      text="{{ password }}" 
+                      secure="true" 
+                      class="input" />
+            
+            <Button text="{{ isLoading ? 'Entrando...' : 'Entrar' }}" 
+                    tap="{{ onEmailLogin }}" 
+                    isEnabled="{{ !isLoading }}"
+                    class="btn-primary" />
+            
+            <Button text="Criar nova conta" 
+                    tap="{{ onRegister }}" 
+                    class="btn-secondary m-t-4" />
+        </StackLayout>
+    </ScrollView>
+</Page>

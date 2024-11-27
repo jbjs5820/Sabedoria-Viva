@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="bg-gray-100">
+    <ActionBar title="Sabedoria Viva" class="bg-purple-600 text-white">
+        <ActionItem tap="{{ onLogout }}" 
+                   ios.position="right" 
+                   android.position="actionBar">
+            <Label text="Sair" class="text-white p-2" />
+        </ActionItem>
+    </ActionBar>
+    
+    <GridLayout rows="auto, *">
+        <StackLayout row="0" class="p-4 bg-white">
+            <Label text="Bem-vindo!" class="text-2xl font-bold mb-2" />
+            <Label text="Explore a comunidade e conecte-se com pessoas incríveis." 
+                   class="text-gray-600" 
+                   textWrap="true" />
+        </StackLayout>
+        
+        <ScrollView row="1">
+            <StackLayout class="p-4">
+                <Label text="Em breve: Recomendações de conexões" 
+                       class="text-lg text-gray-700 text-center p-4" 
+                       textWrap="true" />
+            </StackLayout>
+        </ScrollView>
+    </GridLayout>
+</Page>

@@ -1,0 +1,35 @@
+{
+  "welcome": {
+    "title": "Bienvenido a Sabedoria Viva",
+    "subtitle": "Conectando generaciones, compartiendo experiencias",
+    "description": "Una plataforma dedicada a valorar la sabiduría y experiencia de nuestros mayores",
+    "joinButton": "Únete a nosotros",
+    "learnMore": "Saber más"
+  },
+  "testimonials": {
+    "title": "Lo que dice nuestra comunidad",
+    "subtitle": "Historias reales de conexiones significativas"
+  },
+  "features": {
+    "title": "¿Por qué elegir Sabedoria Viva?",
+    "connect": {
+      "title": "Conectar",
+      "description": "Encuentra personas con intereses similares"
+    },
+    "share": {
+      "title": "Compartir",
+      "description": "Comparte tus experiencias y conocimientos"
+    },
+    "learn": {
+      "title": "Aprender",
+      "description": "Aprende de la experiencia de otros miembros"
+    }
+  },
+  "nav": {
+    "home": "Inicio",
+    "profile": "Perfil",
+    "feed": "Feed",
+    "admin": "Admin",
+    "logout": "Salir"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "welcome": {
+    "title": "Welcome to Sabedoria Viva",
+    "subtitle": "Connecting generations, sharing experiences",
+    "description": "A platform dedicated to valuing the wisdom and experience of our seniors",
+    "joinButton": "Join us",
+    "learnMore": "Learn more"
+  },
+  "testimonials": {
+    "title": "What our community says",
+    "subtitle": "Real stories of meaningful connections"
+  },
+  "features": {
+    "title": "Why choose Sabedoria Viva?",
+    "connect": {
+      "title": "Connect",
+      "description": "Find people with similar interests"
+    },
+    "share": {
+      "title": "Share",
+      "description": "Share your experiences and knowledge"
+    },
+    "learn": {
+      "title": "Learn",
+      "description": "Learn from other members' experience"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "profile": "Profile",
+    "feed": "Feed",
+    "admin": "Admin",
+    "logout": "Logout"
+  }
+}

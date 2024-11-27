@@ -1,0 +1,35 @@
+{
+  "welcome": {
+    "title": "Bienvenue sur Sabedoria Viva",
+    "subtitle": "Connecter les générations, partager les expériences",
+    "description": "Une plateforme dédiée à valoriser la sagesse et l'expérience de nos aînés",
+    "joinButton": "Rejoignez-nous",
+    "learnMore": "En savoir plus"
+  },
+  "testimonials": {
+    "title": "Ce que dit notre communauté",
+    "subtitle": "Histoires réelles de connexions significatives"
+  },
+  "features": {
+    "title": "Pourquoi choisir Sabedoria Viva ?",
+    "connect": {
+      "title": "Connecter",
+      "description": "Trouvez des personnes aux intérêts similaires"
+    },
+    "share": {
+      "title": "Partager",
+      "description": "Partagez vos expériences et connaissances"
+    },
+    "learn": {
+      "title": "Apprendre",
+      "description": "Apprenez de l'expérience des autres membres"
+    }
+  },
+  "nav": {
+    "home": "Accueil",
+    "profile": "Profil",
+    "feed": "Fil",
+    "admin": "Admin",
+    "logout": "Déconnexion"
+  }
+}

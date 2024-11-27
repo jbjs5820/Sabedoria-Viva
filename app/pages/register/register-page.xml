@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="bg-white">
+    <ActionBar title="Criar Conta" class="bg-purple-600 text-white">
+        <NavigationButton text="Voltar" android.systemIcon="ic_menu_back" />
+    </ActionBar>
+    
+    <ScrollView>
+        <StackLayout class="p-6">
+            <Label text="Crie sua conta" class="text-3xl font-bold text-center mb-4" />
+            <Label text="Junte-se à nossa comunidade" class="text-lg text-gray-600 text-center mb-8" textWrap="true" />
+            
+            <TextField hint="Email" 
+                      text="{{ email }}" 
+                      keyboardType="email" 
+                      class="input mb-4 p-4 border rounded-lg text-lg" 
+                      autocorrect="false" 
+                      autocapitalizationType="none" />
+            
+            <TextField hint="Senha" 
+                      text="{{ password }}" 
+                      secure="true" 
+                      class="input mb-4 p-4 border rounded-lg text-lg" />
+            
+            <TextField hint="Confirmar Senha" 
+                      text="{{ confirmPassword }}" 
+                      secure="true" 
+                      class="input mb-6 p-4 border rounded-lg text-lg" />
+            
+            <Button text="{{ isLoading ? 'Criando conta...' : 'Criar Conta' }}" 
+                    tap="{{ onRegister }}" 
+                    isEnabled="{{ !isLoading }}"
+                    class="btn bg-purple-600 text-white text-lg p-4 rounded-lg" />
+            
+            <Button text="Já tem uma conta? Entre aqui" 
+                    tap="{{ onLogin }}" 
+                    isEnabled="{{ !isLoading }}"
+                    class="btn bg-transparent text-purple-600 text-lg p-4" />
+        </StackLayout>
+    </ScrollView>
+</Page>
